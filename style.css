@@ -32,3 +32,32 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.1);
     pointer-events: auto;
 }
+
+#upload-map {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.upload-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background-color: #444;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #666;
+}
