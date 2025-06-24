@@ -1,17 +1,34 @@
 body{
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #111;
 }
 
 .map-container {
-    width: 100vw;
-    height: 100vw;
-    overflow: hidden;
+  position: relative;
+  display: inline-block;
 }
 
-.map-container img {
+.map-image {
+    width: 100%;
+    height: auto;
+   display: block;
+}
+.grid {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr); 
+    grid-template-rows: repeat(20, 1fr);
+    pointer-events: none;
+}
+.grid-cell {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    pointer-events: auto;
 }
